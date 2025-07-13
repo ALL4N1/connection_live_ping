@@ -1,4 +1,4 @@
-# connection_live_ping
+# Connectivity Ping
 A simple python scripts that tells you when your internet died
 
 # Requirements
@@ -10,9 +10,12 @@ A simple python scripts that tells you when your internet died
 # How it works ?
 <ol>
   <li>It calls test_connection() function which ping https://www.google.com and return true if ok</li>
-  <li><ul>
-    <li>If returned false in the first time, the program will exit with connectivity error.</li>
-    <li>If returned true in the first time, the same process will repeat every 30 seconds</li></ul>
+  <li>
+    <ul>
+      <li>If returned false in the first time, the program will exit with connectivity error.</li>
+      <li>If returned true in the first time, the same process will repeat every 30 seconds</li>
+    </ul>
+  </li>
   <li>If at any moment the program failed to ping the google website, it will exit with connectivity error.</li>
 </ol>
 
