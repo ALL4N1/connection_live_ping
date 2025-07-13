@@ -17,6 +17,7 @@ A simple python scripts that tells you when your internet died
     </ul>
   </li>
   <li>If at any moment the program failed to ping the google website, it will exit with connectivity error.</li>
+  <li>The code has useful comments for more detailed walkthrough</li>
 </ol>
 
 # What is the purpose of this script ?
