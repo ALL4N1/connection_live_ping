@@ -52,7 +52,9 @@ if (test_connection()):
     send_notif("Connection established", "Connection established at " + starting_time, "ok_icon.png")
     print("Connection established at " + starting_time)
 else:
+    print("No Connection established") 
     send_notif("No Connection", "No Connection established", "error_icon.png")
+    sleep(5)
     sys.exit()
 
 conn = True
@@ -62,6 +64,7 @@ while conn:
     if not conn: # if the test_connection() ever returned false, usually the wifi suddenly stopped or a problem with mobile hotspot
         print("Connection failed at " + ending_time)
         send_notif("No Connection", "Started at " + starting_time + "\nFailed at " + ending_time, "error_icon.png")
+        sleep(5)
         sys.exit()
     print("Connection good at " + ending_time)
     sleep(30) # wiat for X seconds
